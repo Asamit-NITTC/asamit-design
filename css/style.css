@@ -1,0 +1,177 @@
+html{
+    font-size:32px;
+    font-family:'Segoe UI';
+    background-color:rgb(255, 217, 93);/*rgb(247,205,70)*/
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    max-width:100%;
+}
+
+/*
+*{
+    outline:1px solid #FF0000;
+    box-sizing:boder-box;
+}
+*/
+
+/*全体に適用*/
+
+.header{
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    margin:0 200px;
+}
+
+main{
+    margin:50px auto 50px auto;
+    max-width:1000px;
+    line-height:1;
+}
+
+.block{
+    background-color: #FFFFFF;
+    text-align: center;
+    padding:20px 0 20px 0;
+    border-radius:50px;
+    border:7px solid #000000;
+}
+
+/*lookback*/
+
+.date{
+    font-size:2.0rem;
+}
+.obj{
+    color:#6f6f6f;
+    font-size:2rem;  
+    margin:0;
+}
+.result{
+    font-size:2.2rem;
+    margin:0;
+}
+.time{
+    line-height: 0;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.star{
+    font-size: 0;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    margin:0 auto;
+}
+
+input[type="text"],textarea{
+    padding:6px;
+    width:70%;
+    font-size:1.2rem;
+    font-family:sans-serif;
+}
+textarea{
+    height:200px;
+    border-radius:20px;
+}
+
+.submit{
+    text-align: center;
+}
+input[type="submit"]{
+    border:none;
+    padding:15px;
+    width:250px;
+    background-color:#ff9d00;
+    color:#000000;
+    font-size: 1.0rem;
+    border-radius:10px;
+}
+
+.record{
+    margin:50px 100px 0 100px;
+}
+.days{
+    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin:0 50px;
+
+    border-bottom:5px solid #000000;
+    line-height: 0;
+}
+
+
+/*メディア対応*/
+@media(max-width:1000px){
+    main{
+        padding:0 5%;
+    }
+    .obj{
+        font-size:1.6rem;  
+    }
+    .result{
+        font-size:1.8rem
+    }
+    .para{
+        display:block;
+    }
+}
+
+/*profile*/
+
+.username{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin:0 200px;
+    padding:0;
+    border-bottom:5px solid #000000;
+    line-height: 0;
+}
+.disp{
+    font-size: 2.0rem;
+}
+.userpoint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding:0;
+    margin-top:20px;
+    line-height: 0;
+}
+.userrecord{
+    padding: 0;
+    line-height: 0;
+}
+
+.getupre{
+    margin:0 200px;
+}
+.getupre p{
+    font-size: 1.5rem;
+    line-height: 0;
+}
+.getuprecord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    line-height: 0;
+    padding:0;
+}
