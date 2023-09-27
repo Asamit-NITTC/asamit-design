@@ -56,6 +56,10 @@ main{
     font-size: 4.0rem;
     z-index:20;
 }
+p{
+    position:relative;
+    z-index:30;
+}
 
 
 /*lookback*/
