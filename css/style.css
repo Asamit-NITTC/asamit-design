@@ -1,5 +1,5 @@
 html{
-    font-size:32px;
+    font-size:16px;
     font-family:sans-serif;
     background-color:#ffde59;
     margin: 0px;
@@ -64,11 +64,11 @@ main{
 }
 .obj{
     color:#6f6f6f;
-    font-size:2.0rem;  
+    font-size:2.4rem;  
     margin:0;
 }
 .result{
-    font-size:2.2rem;
+    font-size:2.8rem;
     margin:0;
 }
 .time{
@@ -107,7 +107,7 @@ textarea{
 input[type="submit"]{
     border:none;
     padding:15px;
-    width:300px;
+    width:150px;
     background-color:#ff9d00;
     color:#000000;
     font-size: 1.0rem;
@@ -115,7 +115,7 @@ input[type="submit"]{
 }
 
 .record{
-    margin:50px 100px 0 100px;
+    margin:50px 200px 0 200px;
 }
 .days{
     font-size:2rem;
@@ -136,13 +136,21 @@ input[type="submit"]{
         padding:0 5%;
     }
     .obj{
-        font-size:1.8rem;  
+        font-size:2.0rem;  
     }
     .result{
-        font-size:2.0rem
+        font-size:2.4rem
     }
     .para{
         display:block;
+    }
+    .record{
+        margin:50px 50px 0 50px;
+    }
+}
+@media(max-width:440px){
+    .record{
+        margin:50px auto 0 auto;
     }
 }
 
@@ -153,7 +161,7 @@ input[type="submit"]{
     justify-content: center;
     align-items: center;
     gap:30px;
-    margin:0 200px;
+    margin:0 10px;
     padding:0;
     border-bottom:5px solid #000000;
     line-height: 0;
@@ -176,7 +184,7 @@ input[type="submit"]{
 }
 
 .getupre{
-    margin:0 200px;
+    margin:0 auto;
 }
 .getupre p{
     font-size: 1.5rem;
@@ -193,9 +201,6 @@ input[type="submit"]{
 
 /*wakeup*/
 
-.setgoal{
-    height:600px;
-}
 .goal{
     font-size:1.4rem;
 }
