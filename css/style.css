@@ -175,3 +175,9 @@ input[type="submit"]{
     line-height: 0;
     padding:0;
 }
+
+/*wakeup*/
+
+.goal{
+    font-size:1.8rem;
+}
