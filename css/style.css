@@ -142,8 +142,8 @@ input[type="submit"]{
 }
 
 .record{
-    margin-right:200px;
-    margin-left:200px;
+    margin-right:150px;
+    margin-left:150px;
 }
 .days{
     font-size:1.8rem;
@@ -151,7 +151,7 @@ input[type="submit"]{
     justify-content: center;
     align-items: center;
     gap:10px;
-    margin:0 10vw;
+    margin:0 50px;
 
     border-bottom:5px solid #000000;
     line-height: 0;
@@ -159,15 +159,15 @@ input[type="submit"]{
 
 
 /*メディア対応*/
-@media(max-width:767px){
+@media(max-width:600px){
     main{
         padding:0 5%;
     }
     .obj{
-        font-size:1.3rem;  
+        font-size:1.4rem;  
     }
     .result{
-        font-size:1.5rem
+        font-size:1.6rem
     }
     .para{
         display:block;
@@ -177,25 +177,27 @@ input[type="submit"]{
         height:30px;
     }
     .record{
-        margin-right:50px;
-        margin-left:50px;
-    }
-}
-@media(max-width:440px){
-    .record{
         margin:10px auto 0 auto;
     }
 }
 
 /*profile*/
 
+.profile img{
+    height:30vh;
+    width:30vh;
+
+    margin-top:10px;
+}
 .username{
     display: flex;
     justify-content: center;
     align-items: center;
     gap:30px;
-    margin:0 10px;
+
+    margin:0 50px;
     padding:0;
+
     border-bottom:5px solid #000000;
     line-height: 0;
 }
@@ -217,10 +219,10 @@ input[type="submit"]{
 }
 
 .getupre{
-    margin:0 auto;
+    margin:0 10vw;
 }
 .getupre p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 0;
 }
 .getuprecord{
