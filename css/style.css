@@ -2,8 +2,8 @@ html{
     font-size:16px;
     font-family:sans-serif;
     background-color:#ffde59;
-    margin: 0px;
-    padding: 0px;
+    margin:0;
+    padding:0;
 }
 
 img{
@@ -19,16 +19,19 @@ img{
 
 /*全体に適用*/
 
+/*
 .header{
     background-color: #FFFFFF;
     text-align: center;
     font-size: 1.5rem;
-    margin:0 200px;
+    margin:0 ;
 }
+*/
 
 main{
-    margin:50px auto 50px auto;
+    margin:0 auto;
     max-width:1000px;
+    min-width: 250px;
     line-height:1;
 
     position:relative;
@@ -36,25 +39,29 @@ main{
 
 .block{
     background-color: #FFFFFF;
-    text-align: center;
-    padding:20px 0 20px 0;
+    
+    padding:0;
+    margin:10px 0;
     border-radius:25px;
     border:4px solid #000000;
+
+    text-align: center;
     z-index:30;
     position:relative;
 }
 
 .backchar{
-    position:fixed;
     bottom:0;
     right:0;
+
     padding:0;
     margin:0 0 20px 0;
-
     border-bottom:5px solid #ffeeaa;
     color:#ffeeaa;
+
     font-size: 4.0rem;
     z-index:20;
+    position:fixed;
 }
 
 p{
@@ -65,16 +72,18 @@ p{
 
 /*lookback*/
 
+
 .date{
-    font-size:2.0rem;
+    font-size:1.3rem;
 }
+
 .obj{
     color:#6f6f6f;
-    font-size:2.4rem;  
+    font-size:1.7rem;  
     margin:0;
 }
 .result{
-    font-size:2.8rem;
+    font-size:2.0rem;
     margin:0;
 }
 .time{
@@ -84,10 +93,17 @@ p{
 .stars{
     display: flex;
     justify-content: center;
-    gap:10px;
+    gap:5px;
 }
 .star{
     font-size: 0;
+    width:50px;
+    height:50px;
+    align-items: center;
+}
+.star img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .para{
@@ -100,8 +116,13 @@ p{
 
 textarea{
     padding:6px;
-    width:70%;
-    height:250px;
+
+    width:70vw;
+    max-width:600px;
+    height:30vh;
+    max-height: 300px;
+    min-height: 150px;
+
     font-size:1.2rem;
     font-family:sans-serif;
     border-radius:20px;
@@ -121,15 +142,16 @@ input[type="submit"]{
 }
 
 .record{
-    margin:50px 200px 0 200px;
+    margin-right:200px;
+    margin-left:200px;
 }
 .days{
-    font-size:2rem;
+    font-size:1.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap:10px;
-    margin:0 50px;
+    margin:0 10vw;
 
     border-bottom:5px solid #000000;
     line-height: 0;
@@ -142,21 +164,26 @@ input[type="submit"]{
         padding:0 5%;
     }
     .obj{
-        font-size:2.0rem;  
+        font-size:1.3rem;  
     }
     .result{
-        font-size:2.4rem
+        font-size:1.5rem
     }
     .para{
         display:block;
     }
+    .star{
+        width:30px;
+        height:30px;
+    }
     .record{
-        margin:50px 50px 0 50px;
+        margin-right:50px;
+        margin-left:50px;
     }
 }
 @media(max-width:440px){
     .record{
-        margin:50px auto 0 auto;
+        margin:10px auto 0 auto;
     }
 }
 
